@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<title></title>
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<style type="text/css">
+<!--
+#apDiv1 {
+	position:absolute;
+	width:45px;
+	height:22px;
+	z-index:1;
+	left: 376px;
+	top: 56px;
+}
+-->
+</style>
+</head>
+<body>
+<script language=JavaScript type="text/javascript">
+<!--
+
+
+var message="This image cannot be copied";
+
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false")
+
+// --> 
+</script>
+<table bgcolor="#FFFFFF" class="tabledesign1 bodytext" width="625" border="0" cellspacing="0" cellpadding="2">
+  <tr>
+    <td><img src="images/ratecard.gif" alt="" width="966" height="1063" border="0" usemap="#Map">
+    <div id="apDiv1"><a name="h1details"></a></div></td>
+  </tr>
+  <tr><td>
+  <div class="footer_per">
+<span class="floatleft paddingleft5">Enago is a member of Crimson Interactive Pvt. Ltd.</span>
+<span class="floatright paddingright5">Copyright &copy; 2006-<? echo date(Y) ?> Crimson Interactive Pvt. Ltd. All Rights Reserved.</span>
+</div>
+  </td></tr>
+</table>
+<map name="Map"><area shape="rect" coords="18,16,344,99" href="http://www.enago.ae/" target="_blank" alt="">
+</map>
+
+
+
+</body>
+</html>

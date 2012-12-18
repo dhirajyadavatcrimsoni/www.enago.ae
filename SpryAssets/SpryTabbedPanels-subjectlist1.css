@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+.TabbedPanels {
+	margin: 0px;
+	padding: 0px;
+	float: right;
+	clear: none;
+	width: 545px; direction:rtl/* IE Hack to force proper layout when preceded by a paragraph. (hasLayout Bug)*/
+}
+
+.TabbedPanelsTabGroup {
+	margin: 0px;
+	padding: 0px;
+	border:1px solid #ccc;
+	border-bottom:0;
+	width:624px;
+	padding:0 0 0 1px;
+}
+
+.TabbedPanelsTab {
+	font:bold 0.8em Arial, Helvetica, sans-serif;
+	position: relative;
+	top: 1px;
+	float: right;
+	margin: 0px 0px 0px 3px;
+	list-style: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	cursor: pointer;
+	color:#454545;
+	width:240px;
+	margin:13px 0px 5px 9px;
+    height: 42px;
+}
+.TabbedPanelsTab a.medicine {
+	background: url(../img/subjectareas/2bt-grey.png) no-repeat scroll 0 0 transparent;
+	color: black;
+	text-decoration: none;
+	padding: 14px 80px 24px 53px;
+	color:#454545;
+}
+
+.TabbedPanelsTab a.medicine:hover{
+    background: url(../img/subjectareas/2bt-blue.png) no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #FFFFFF;
+}
+.TabbedPanelsTab a.journal {
+	background: url(../img/subjectareas/1bt-grey.png) no-repeat scroll 0 0 transparent;
+	color: black;
+	text-decoration: none;
+	padding: 14px 94px 24px 60px;
+	color:#454545;
+}
+.TabbedPanelsTab a.journal:hover {
+    background: url(../img/subjectareas/1bt-blue.png) no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #FFFFFF;
+}
+.TabbedPanelsTab a.physics {
+	background: url(../img/subjectareas/3bt-grey.png) no-repeat scroll 0 0 transparent;
+	color: black;
+	text-decoration: none;
+	padding: 14px 80px 24px 53px;
+	color:#454545;
+}
+
+.TabbedPanelsTab a.physics:hover{
+    background: url(../img/subjectareas/3bt-blue.png) no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #FFFFFF;
+}
+.TabbedPanelsTab a.business {
+	background: url(../img/subjectareas/4bt-grey.png) no-repeat scroll 0 0 transparent;
+	color: black;
+	text-decoration: none;
+	padding: 14px 80px 24px 53px;
+	color:#454545;
+}
+
+.TabbedPanelsTab a.business:hover{
+    background: url(../img/subjectareas/4bt-blue.png) no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #FFFFFF;
+}
+.TabbedPanelsTab a.social  {
+	background: url(../img/subjectareas/5bt-grey.png) no-repeat scroll 0 0 transparent;
+	color: black;
+	text-decoration: none;
+	padding: 14px 80px 24px 53px;
+	color:#454545;
+}
+
+.TabbedPanelsTab a.social:hover{
+    background: url(../img/subjectareas/5bt-blue.png) no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #FFFFFF;
+}
+.TabbedPanelsTab a.eco  {
+	background: url(../img/subjectareas/6bt-grey.png) no-repeat scroll 0 0 transparent;
+	color: black;
+	text-decoration: none;
+	padding: 14px 80px 24px 53px;
+	color:#454545;
+}
+
+.TabbedPanelsTab a.eco:hover{
+    background: url(../img/subjectareas/6bt-blue.png) no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #FFFFFF;
+}
+
+
+
+.tabclicked1	{
+    background: url(../img/subjectareas/2bt-blue.png) no-repeat scroll 0 0 transparent !important;
+	color:#fff !important;
+}
+.tabunclicked1	{
+	background: url(../img/subjectareas/2bt-grey.png) no-repeat scroll 0 0 transparent !important;
+}
+.tabclicked2	{
+    background: url(../img/subjectareas/1bt-blue.png) no-repeat scroll 0 0 transparent !important;
+	color:#fff !important;
+}
+.tabunclicked	{
+	background: url(../img/subjectareas/1bt-grey.png) no-repeat scroll 0 0 transparent !important;
+}
+.tabclicked3	{
+    background: url(../img/subjectareas/3bt-blue.png) no-repeat scroll 0 0 transparent !important;
+	color:#fff !important;
+}
+.tabunclicked3{
+	background: url(../img/subjectareas/3bt-grey.png) no-repeat scroll 0 0 transparent !important;
+}
+.tabclicked4	{
+    background: url(../img/subjectareas/4bt-blue.png) no-repeat scroll 0 0 transparent !important;
+	color:#fff !important;
+}
+.tabunclicked4{
+	background: url(../img/subjectareas/4bt-grey.png) no-repeat scroll 0 0 transparent !important;
+}
+.tabclicked5	{
+    background: url(../img/subjectareas/5bt-blue.png) no-repeat scroll 0 0 transparent !important;
+	color:#fff !important;
+}
+.tabunclicked5{
+	background: url(../img/subjectareas/5bt-grey.png) no-repeat scroll 0 0 transparent !important;
+}
+.tabclicked6	{
+    background: url(../img/subjectareas/6bt-blue.png) no-repeat scroll 0 0 transparent !important;
+	color:#fff !important;
+}
+.tabunclicked6{
+	background: url(../img/subjectareas/6bt-grey.png) no-repeat scroll 0 0 transparent !important;
+}
+
+
+
+.TabbedPanelsTabSelected {
+    border: 0 none;
+    color: #A50A3A !important;
+}
+.TabbedPanelsContentGroup { width:625px;
+	clear: both; height:auto; 
+	border-left: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+	border-top: solid 1px #CCC;
+	border-right: solid 1px #CCC;
+	background-color: #FFF;
+}
+
+
+.TabbedPanelsContent {
+	padding: 4px;
+}
+
+.TabbedPanelsContentVisible {
+}
