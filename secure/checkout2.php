@@ -1,6 +1,7 @@
 <?php
 session_register ("$Order_Id");
 session_register("$formatedtimeinv");
+date_default_timezone_set('UTC'); 
 $timeinv = time();
 /*$formatedtimeinv = Date("MdYHis",$timeinv);*/
 $formatedtimeinv = Date("Y-m-d H:i:s",$timeinv);
