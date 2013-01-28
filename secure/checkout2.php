@@ -2,7 +2,8 @@
 session_register ("$Order_Id");
 session_register("$formatedtimeinv");
 $timeinv = time();
-$formatedtimeinv = Date("MdYHis",$timeinv);
+/*$formatedtimeinv = Date("MdYHis",$timeinv);*/
+$formatedtimeinv = Date("Y-m-d H:i:s",$timeinv);
 $Order_Id1 = "ENAGO-PP" .$formatedtimeinv .$member ;
 $Order_Id=urlencode("$Order_Id1");
 $ip=@$REMOTE_ADDR; 
@@ -117,7 +118,7 @@ anylinkcssmenu.init("anchorclass")
   <div align="left">
   <INPUT type="hidden" value="_xclick" name="cmd"> 
   <INPUT type="hidden" value="Enago-Editing Services" name="item_name"> 
-  <INPUT type="hidden" value="paypal@enago.com" name="business"> 
+  <INPUT type="hidden" value="paypalusd@enago.com" name="business"> 
   <input type="hidden" name="country" value="UAE">
   <INPUT type="hidden" value="http://www.enago.com.br/images/logo_enago.gif" name="image_url"> 
   <INPUT type="hidden" value="http://www.enago.com.br/secure/success.htm"  name="return">
@@ -155,7 +156,6 @@ anylinkcssmenu.init("anchorclass")
 <!-- footer code start here -->
 
 <?php include("../includes/inc_footer.htm"); ?>
-
 
 </body>
 </html>
