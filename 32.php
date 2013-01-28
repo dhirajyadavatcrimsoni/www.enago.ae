@@ -1,6 +1,7 @@
 <?php
 session_start();
 session_register("$formatedtimeinv");
+date_default_timezone_set('Asia/Calcutta');
 $timeinv = time();
 $formatedtimeinv = Date("M-d-Y-H-i-s",$timeinv);
 ?>

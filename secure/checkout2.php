@@ -117,7 +117,7 @@ anylinkcssmenu.init("anchorclass")
   <div align="left">
   <INPUT type="hidden" value="_xclick" name="cmd"> 
   <INPUT type="hidden" value="Enago-Editing Services" name="item_name"> 
-  <INPUT type="hidden" value="paypalusd@enago.com" name="business"> 
+  <INPUT type="hidden" value="paypal@enago.com" name="business"> 
   <input type="hidden" name="country" value="UAE">
   <INPUT type="hidden" value="http://www.enago.com.br/images/logo_enago.gif" name="image_url"> 
   <INPUT type="hidden" value="http://www.enago.com.br/secure/success.htm"  name="return">
