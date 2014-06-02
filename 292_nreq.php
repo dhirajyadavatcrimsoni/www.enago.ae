@@ -746,25 +746,24 @@ anylinkcssmenu.init("anchorclass")
 <!-- footer code start here -->
 
 <?php include("inc_footer_thanku.htm"); ?> 
-<!-- Google Code for Enago Arabic - Enquiry Conversion Page -->
+<!-- Google Code for EnagoArabic Conversion Page -->
 <script type="text/javascript">
 /* <![CDATA[ */
-var google_conversion_id = 1011632437;
+var google_conversion_id = 980682862;
 var google_conversion_language = "en";
-var google_conversion_format = "3";
+var google_conversion_format = "2";
 var google_conversion_color = "ffffff";
-var google_conversion_label = "myPlCIvl3wIQtZKx4gM";
-var google_conversion_value = 0;
+var google_conversion_label = "3yA3CLKD7QkQ7pDQ0wM";
+var google_remarketing_only = false;
 /* ]]> */
 </script>
-<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
 </script>
 <noscript>
 <div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1011632437/?value=0&amp;label=myPlCIvl3wIQtZKx4gM&amp;guid=ON&amp;script=0"/>
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/980682862/?label=3yA3CLKD7QkQ7pDQ0wM&amp;guid=ON&amp;script=0"/>
 </div>
 </noscript>
-
 </body>
 </html>
 <?php }?>
