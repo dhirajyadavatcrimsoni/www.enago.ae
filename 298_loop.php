@@ -1,4 +1,12 @@
 <? session_start();
+$num1 = $_POST['num1'];
+$num2 = $_POST['num2'];
+$answer = $_POST['answer'];
+$trackcode = $_POST['trackcode'];
+
+$answer2 = $num1 + $num2;
+
+if($trackcode == "crimson" && $answer == $answer2){
 session_register("nq");
 session_register("assignnumber");
 session_register("name");
@@ -184,3 +192,11 @@ anylinkcssmenu.init("anchorclass")
 
 </body>
 </html>
+<?php 
+} 
+else
+{
+	echo "Incorrect data";
+	return false;
+}
+?>

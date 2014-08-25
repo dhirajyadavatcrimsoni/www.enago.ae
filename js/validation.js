@@ -39,7 +39,7 @@ function validate_step3()
 
 function validate_confirm()
 {
-	if (validate_step1() && validate_step2() && validate_step3() && isClientType() && isUpload() && istandc())
+	if (validate_step1() && validate_step2() && validate_step3() && isClientType() && isCaptcha() && isUpload() && istandc())
 	{
 		document.frmSubmit.action = "292_nreq.php";
 		return true;
@@ -51,6 +51,25 @@ function validate_confirm()
 	}	
 }
 
+function isCaptcha(){
+var str = document.frmSubmit.answer.value;
+var num1 = document.frmSubmit.num1.value;
+var num2 = document.frmSubmit.num2.value;
+var total = Math.round(num1) + Math.round(num2);
+	if(str == "")
+	{
+		alert("Please enter sum of numbers.");
+		document.frmSubmit.answer.focus();
+		return false;
+	}
+	else if(str != total)
+	{
+		alert("Answer the equation correctly.");
+		document.frmSubmit.answer.focus();
+		return false;
+	}
+return true;
+}
 
 function isPlandetails()
 {

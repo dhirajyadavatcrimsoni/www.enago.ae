@@ -31,7 +31,7 @@ anylinkcssmenu.init("anchorclass")
 
 function validate()
 {
-	if (ismember() && isAmount())
+	if (ismember() && isAmount() && isCaptcha())
 	{
 	return true;
 	}
@@ -39,6 +39,26 @@ function validate()
 	{
 	return false;
 	}	
+}
+
+function isCaptcha(){
+var str = document.frmSubmit.answer.value;
+var num1 = document.frmSubmit.num1.value;
+var num2 = document.frmSubmit.num2.value;
+var total = Math.round(num1) + Math.round(num2);
+	if(str == "")
+	{
+		alert("Please enter sum of numbers.");
+		document.frmSubmit.answer.focus();
+		return false;
+	}
+	else if(str != total)
+	{
+		alert("Answer the equation correctly.");
+		document.frmSubmit.answer.focus();
+		return false;
+	}
+return true;
 }
 
 function ismember() 
@@ -98,6 +118,12 @@ function isAmount()
 
 </head>
 <body>
+<?php
+$num1 = rand(1, 9);
+$num2 = rand(1, 9);
+
+$question = "<label>What is sum of " . $num1 . " + " . $num2 ." ?</label>";
+?>
 <?php include("inc_header.htm"); ?>
 <!--main-navigation start-->
 <div id="navigation">
@@ -183,6 +209,14 @@ function isAmount()
 <br />
 غير صحيح: 2,345</td>
         </tr>
+        <tr>
+<td class="col1"><?php echo $question ?> <span class="font11">Prove you are not a robot.</span></td>
+<td class="col2 mandatory">*</td>
+<td class="col3"><input name="answer" type="text" id="answer" size="10" maxlength="15" class="textfield" />
+<input type="hidden" name="trackcode" value="crimson"  id="trackcode" />
+<input type="hidden" name="num1"  id="num1" value="<?php echo $num1 ?>" />
+<input type="hidden" name="num2" id="num2" value="<?php echo $num2 ?>" /></td>
+</tr>
          </table> 
           
       <div style="text-align:center; padding-top:10px;">

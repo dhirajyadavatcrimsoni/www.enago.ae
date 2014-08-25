@@ -1,10 +1,12 @@
 <?php
-if ( (strtoupper(trim($fname)) == strtoupper(trim($lname))) && (strtoupper(trim($fname)) == strtoupper(trim($journalname))) ) {
-	
-	echo "Incorrect data";
-	return false;
-} else 
-{ 
+$num1 = $_POST['num1'];
+$num2 = $_POST['num2'];
+$answer = $_POST['answer'];
+$trackcode = $_POST['trackcode'];
+
+$answer2 = $num1 + $num2;
+
+if($trackcode == "crimson" && $answer == $answer2){
 // end function validate_email
 $originallname=$lname;
 $originalfname=$fname;
@@ -766,4 +768,11 @@ var google_remarketing_only = false;
 </noscript>
 </body>
 </html>
-<?php }?>
+<?php 
+} 
+else
+{
+	echo "Incorrect data";
+	return false;
+}
+?>

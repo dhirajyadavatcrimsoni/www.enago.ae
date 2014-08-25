@@ -31,6 +31,12 @@ anylinkcssmenu.init("anchorclass")
 <!--sidebar ends-->
  </head>
 <body>
+<?php
+$num1 = rand(1, 9);
+$num2 = rand(1, 9);
+
+$question = "<label>What is sum of " . $num1 . " + " . $num2 ." ?</label>";
+?>
 <?php include("inc_header.htm"); ?>
 <!--main-navigation start-->
 <div id="navigation">
@@ -1009,11 +1015,21 @@ anylinkcssmenu.init("anchorclass")
                       </table></div>
       
 <div id="pd7" ><table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_form"><tr>
-<td class="col1a">هل لديك رمز خاص؟<br />
+<td class="col1">هل لديك رمز خاص؟<br />
 ما هي الرموز الخاصة؟ <a href="#" class="tooltip"><img src="img/quotation/questionmark.gif" width="16" height="16" alt="التحرير باللغة الإنجليزية, التحرير المهني باللغة الإنجليزية,التصحيح باللغة الإنجليزية, خدمة التدقيق اللغوي" /><span>الرموز الخاصة هي رموز أبجدية رقمية للطلبات الخاصة. فعلى سبيل المثال، استخدم الرمز RE-EDIT في حال اتصالك لإعادة تحرير المخطوطة الخاصة بك.العديد من الرموز الخاصة تمنحك أيضا خصومات خاصة من وقت لآخر.</span></a></td>
-<td class="col2a">&nbsp;</td>
-<td class="col3a"><input name="specialcode" type=text id="specialcode" size="10" maxlength="15"  class="textfield" /> إذا كان لديك رمزا خاصا، يُرجى إدخاله هنا </td>
-</tr></table></div>
+<td class="col2">&nbsp;</td>
+<td class="col3"><input name="specialcode" type=text id="specialcode" size="10" maxlength="15"  class="textfield" /> إذا كان لديك رمزا خاصا، يُرجى إدخاله هنا </td>
+</tr>
+<tr>
+<td class="col1a"><?php echo $question ?> <span class="font11">Prove you are not a robot.</span></td>
+<td class="col2a mandatory">*</td>
+<td class="col3a"><input name="answer" type="text" id="answer" size="10" maxlength="15" class="textfield" />
+<input type="hidden" name="trackcode" value="crimson"  id="trackcode" />
+<input type="hidden" name="num1"  id="num1" value="<?php echo $num1 ?>" />
+<input type="hidden" name="num2" id="num2" value="<?php echo $num2 ?>" /></td>
+</tr>
+
+</table></div>
                   
 </div>
 
