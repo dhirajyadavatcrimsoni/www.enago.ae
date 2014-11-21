@@ -675,7 +675,18 @@ $tandc="$agreeterms, I have agreed the terms & conditions. ";
 
 $message = $msgrequest;
 
-mail("$to", "$subjectline", $message,
+$myemail = strpbrk($email, '@');
+$fname=ucwords(strtolower($fname));
+$lname=ucwords(strtolower($lname));
+if($fname =="Crimson" || $lname =="Crimson" || $fname =="Test" || $lname =="Test" || $myemail == "@crimsoni.com" || $myemail == "@enago.com" || $myemail == "@ulatus.com" || $myemail == "@voxtab.com")
+	{ 
+		$to = $testmail.", ".$email; 
+		$tovcs = $testmail.", ".$email; 
+		$subalert="[FORM TESTING]";
+		$testalert="FORM TESTING >>>>>>> FORM TESTING >>>>>>> FORM TESTING >>>>>>> FORM TESTING >>>>>>> FORM TESTING >>>>>>> FORM TESTING";
+	}
+
+mail("$to", "$subjectline".$subalert, $testalert.$message,
               "From: Uploads-ENAGO<$fromAdd>\r\n" .
 				"Content-type: text/plain; charset=utf-8");
 
@@ -684,7 +695,7 @@ mail("$to", "$subjectline", $message,
 $messagevcs = $msgvcs;
 
 
-mail("$tovcs", "$subjectline", $messagevcs,  
+mail("$tovcs", "$subjectline".$subalert, $testalert.$messagevcs,  
               "From: Uploads-ENAGO<$fromAdd>\r\n" .
 				"Content-type: text/plain; charset=utf-8");
 

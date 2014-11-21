@@ -50,6 +50,9 @@ $tovcs="crimson.vcs@gmail.com";
 //EC Support
 $fromAddecs="requestecs@enago.com";
 
+// Test ID
+$testmail="uploadtest@enago.com";
+
 
 //This is a CC email address. For multiple CC addresses seperate them with "," (comma)
 $bccAdd = "uploads@enago.com"; //this is actually BCC in the code
