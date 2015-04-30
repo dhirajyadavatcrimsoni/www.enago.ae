@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php putenv('TZ=Asia/Calcutta'); ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -207,8 +207,8 @@ $question = "<label>What is sum of " . $num1 . " + " . $num2 ." ?</label>";
       <option value="December">12</option>
     </select>&nbsp;<select style="width:60px;" name="delYear" class="textfield" id="delYear">
         <option>سنة</option>
-<option value="2014" selected="selected">2014</option>
-<option value="2015">2015</option>
+<option value="<?php echo date("Y"); ?>" selected="selected"><?php echo date("Y"); ?></option>
+<option value="<?php echo date("Y")+1; ?>"><?php echo date("Y")+1; ?></option>
       </select>
       <div class="cleaner marB10"></div>
       <select name="delHrs" style="width:65px" class="textfield" id="delHrs">
