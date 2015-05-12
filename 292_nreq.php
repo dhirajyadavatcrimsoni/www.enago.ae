@@ -366,7 +366,7 @@ $thankyoupagetext="<br />
 
 else if (($size_limit == "yes") && ($limit_size < $superdat_size))
 {
-$superdat_name=$fname."_".$lname."_".$superdat_name;
+$superdat_name=$fname."_".$lname."_".$date."_".$nowClock."_".$superdat_name;
 $autoresponse="نأسف ولكن الملف الخاص بك لا يمكن رفعه وذلك لأن الملف أكبر من 8 ميجابايت. يُرجى إرسال الملفات عبر البريد الإلكتروني إلى request-arabic@enago.com";
 $crimsonemailtext="FILE SIZE MORE THAN 8 MB, so cannot upload through website";
 $thankyoupagetext="<br />
@@ -376,9 +376,9 @@ else
 {
 if (file_exists("$absolute_path/$superdat_name"))
 	{
-	$superdat_name=$fname.$lname."_".$date.$nowClock."_".$superdat_name;
+	$superdat_name=$fname."_".$lname."_".$date."_".$nowClock."_".$superdat_name;
 	}
-	else {$superdat_name=$fname."_".$lname."_".$superdat_name;}
+	else {$superdat_name=$fname."_".$lname."_".$date."_".$nowClock."_".$superdat_name;}
 @copy($superdat, "$absolute_path/$superdat_name");
 $autoresponse="الملف الذي تم تحميله بنجاح";
 $crimsonemailtext="FILE UPLOADED";
