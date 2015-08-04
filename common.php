@@ -6,8 +6,8 @@ $toec="ec.enago@crimsoni.com, uploads@enago.com";
 
 $toecs="requestecs@enago.com, marketing@enago.com";
 $autotod = "autoquote@enago.jp"; // autoquote emails
-$tod = "uploads@enago.com, uploads@enago.net"; // to the people in the company
-$fromAdd= "uploads@enago.com"; //from which address
+$tod = "uaeuploads@enago.com, alluploads@crimsonjapan.co.jp"; // to the people in the company
+$fromAdd= "uaeuploads@enago.com"; //from which address
 $fromAddauto= "autoquote@enago.jp"; //from which address for auotmatic quotations
 $clientfromAdd= "DO_NOT_REPLY@enago.com"; //client email from address
 $toq = "uploads@enago.com, uploads@enago.net";
